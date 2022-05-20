@@ -1,0 +1,49 @@
+#Movendo Pastas
+mkdir DIRETORIO
+cd DIRETORIO
+cd .. (volta diretório)
+
+
+#Vendo a Pasta / Logs
+ls -la (detalhado)
+git status
+git log
+git shortlog -sn (Apenas a quantidade de Commits)
+git show HASH-DO-COMMIT (Ver o que foi modificado)
+git diff (Mostra a mudança antes do commit)
+git diff --name-only (Mostra apenas quais arquivos foram modificados)
+git remote (mostra a origin)
+
+
+#Voltando no Tempo
+git checkout ARQUIVO (ctrl+z no arquivo)
+git reset --soft HASH-DO-COMMIT (Volta para a commit referenciada)
+git reset --hard HASH-DO-COMMIT (Volta e deleta mudandãs do commit referenciado)
+
+============================================================
+
+
+#Configurando o Git
+git config --global user.name "SEU NOME"
+git config --global user.name "seu-email@email.com"
+
+
+#Iniciando o Git
+git init
+git remote add origin git@github.com:CAMINHO 
+
+
+#Criando Branch
+git branch -M "BRANCH"
+
+
+#Editando e Postando Arquivos
+git add . (adicionar toda a pasta)
+git add ARQUIVO.TXT 
+git commit -m "COMMIT"
+git push origin master
+
+
+#Clonando Repositórios na máquina Local
+git clone git@github.com/path
+"Fork", pelo Github, cria uma cópia para o seu git pessoal
